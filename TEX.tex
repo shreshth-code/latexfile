@@ -1,0 +1,295 @@
+\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+\usepackage{parskip}%
+\usepackage[top=5cm,hmargin=2cm,headheight=100pt,footskip=100pt,bottom=5cm]{geometry}%
+\usepackage{amsmath}%
+\usepackage{graphicx}%
+\usepackage{needspace}%
+\usepackage{color}%
+\usepackage{longtable}%
+\usepackage{tabularx}%
+\usepackage{multirow}%
+\usepackage[table]{xcolor}%
+\usepackage{xcolor}%
+\usepackage{fancyhdr}%
+%
+\definecolor{OsdagGreen}{RGB}{153,169,36}%
+\definecolor{PassColor}{RGB}{153,169,36}%
+\definecolor{Red}{RGB}{255,0,0}%
+\definecolor{Green}{RGB}{0,200,0}%
+\definecolor{FailColor}{HTML}{933A16}%
+\fancypagestyle{header}{ 
+\renewcommand{\headrulewidth}{0pt}%
+\renewcommand{\footrulewidth}{0pt}%
+\fancyhead{ 
+}%
+\fancyfoot{ 
+}%
+\usepackage{mwe} % for placeholder image
+
+\fancyhead[C]{
+  \includegraphics[width=4cm,height=1cm]{example-image}
+} 
+\begin{tabularx}{\textwidth}{|l|p{4cm}|l|X|}%
+\hline%
+\multicolumn{2}{|c|}{}&\multicolumn{2}{|c|}{Created with%
+% \includegraphics[width=4.0cm,height=1cm]{Osdag_header_report.png}  % Commented out - image not found}\\%
+\hline%
+\rowcolor{OsdagGreen}%
+Company Name&IIT Bombay&Project Title&\\%
+\hline%
+\rowcolor{OsdagGreen}%
+Group/Team Name&Osdag FOSSEE&Subtitle&\\%
+\hline%
+\rowcolor{OsdagGreen}%
+Designer&Parth K&Job Number&\\%
+\hline%
+\rowcolor{OsdagGreen}%
+Date&18 /09 /2024&Client&\\%
+\hline%
+\end{tabularx}
+}%
+\fancyfoot[R]{ 
+Page \thepage
+}
+}%
+%
+\begin{document}%
+\normalsize%
+\fontsize{8}{12}%
+\selectfont%
+% \pagestyle{header}  % Removed invalid pagestyle%
+\section{Input Parameters}%
+\label{sec:InputParameters}%
+\renewcommand{\arraystretch}{1.2}%
+\begin{longtable}{|p{5cm}|p{2.5cm}|p{1.5cm}|p{3cm}|p{3.5cm}|}%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Module}&\multicolumn{2}{|c|}{Tension Member Design {-} Bolted to End Gusset}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Axial (kN)* }&\multicolumn{2}{|c|}{76.0}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Length (mm) *}&\multicolumn{2}{|c|}{1250.0}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Section Profile*}&\multicolumn{2}{|c|}{Angles}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Section Size*}&\multicolumn{2}{|c|}{Ref List of Input Section}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Section Material}&\multicolumn{2}{|c|}{E 250 (Fe 410 W)A}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Ultimate Strength, $F_u$ (MPa)}&\multicolumn{2}{|c|}{410}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Yield Strength, $F_y$ (MPa)}&\multicolumn{2}{|c|}{250}\\%
+\hline%
+\hline%
+\multicolumn{5}{|c|}{\textbf{Bolt Details {-} Input and Design Preference}}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Diameter (mm)}&\multicolumn{2}{|c|}{{[}8{]}}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Property Class}&\multicolumn{2}{|c|}{{[}4.6{]}}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Type}&\multicolumn{2}{|c|}{Bearing Bolt}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Hole Type}&\multicolumn{2}{|c|}{Standard}\\%
+\hline%
+\hline%
+\multicolumn{5}{|c|}{\textbf{Detailing {-} Design Preference}}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Edge Preparation Method}&\multicolumn{2}{|c|}{Sheared or hand flame cut}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Are the Members Exposed to Corrosive Influences?}&\multicolumn{2}{|c|}{False}\\%
+\hline%
+\hline%
+\multicolumn{5}{|c|}{\textbf{Plate Details {-} Input and Design Preference}}\\%
+\hline%
+\multicolumn{3}{|c|}{\multirow{2}{*}{Thickness (mm)}}&\multicolumn{2}{|c|}{{[}8, 10, 12, 14, 16, 18, 20, 22, 25, 28, 32, 36, 40, 45, }\\%
+\multicolumn{3}{|c|}{\multirow{2}{*}{}}&\multicolumn{2}{|c|}{50, 56, 63, 75, 80, 90, 100, 110, 120{]}}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Material}&\multicolumn{2}{|c|}{E 250 (Fe 410 W)A}\\%
+\hline%
+\end{longtable}%
+\subsection{List of Input Section}%
+\label{subsec:ListofInputSection}%
+\renewcommand{\arraystretch}{1.2}%
+\begin{tabularx}{\textwidth}{|p{4cm}|X|}%
+\hline%
+\multicolumn{1}{|c|}{Section Size*}&\multicolumn{1}{|X|}{'40 x 40 x 5'}\\%
+\hline%
+\end{tabularx}
+
+%
+\Needspace{10\baselineskip}%
+\newpage%
+\section{Design Checks}%
+\label{sec:DesignChecks}%
+\renewcommand{\arraystretch}{1.2}%
+\begin{tabularx}{\textwidth}{|>{\centering}p{12.5cm}|>{\centering\arraybackslash}X|}%
+\hline%
+\textbf{Design Status}&\cellcolor{Red}{\textbf{Fail}}\\%
+\hline%
+\end{tabularx}%
+\subsection{Selected Member Data}%
+\label{subsec:SelectedMemberData}%
+\renewcommand{\arraystretch}{1.2}%
+\begin{longtable}{|p{5cm}|p{2cm}|p{2cm}|p{2cm}|p{4cm}|}%
+\hline%
+\hline%
+\cline{2%
+-%
+5}%
+&\multicolumn{2}{|c|}{Material}&\multicolumn{2}{|c|}{E 250 (Fe 410 W)A}\\%
+\cline{2%
+-%
+5}%
+&\multicolumn{2}{|c|}{Mass, $m$ (kg/m)}&\multicolumn{2}{|c|}{2.99}\\%
+\cline{2%
+-%
+5}%
+&\multicolumn{2}{|c|}{Area, $A$ (cm$^2$)}&\multicolumn{2}{|c|}{381.0}\\%
+\cline{2%
+-%
+5}%
+&$A$ (mm)&40.0&$I_v$(cm$^4$)&2.33\\%
+\cline{2%
+-%
+5}%
+&$B$ (mm)&40.0&$r_z$ (cm)&1.21\\%
+\cline{2%
+-%
+5}%
+&$t$ (mm)&5.0&$r_y$ (cm)&1.21\\%
+\cline{2%
+-%
+5}%
+&$R_1$ (mm)&5.5&$r_u$ (cm)&1.52\\%
+\cline{2%
+-%
+5}%
+&$R_2$ (mm)&0.0&$r_v$ (cm)&0.78\\%
+\cline{2%
+-%
+5}%
+&$C_y$ (mm)&11.7&$Z_z$ (cm$^3$)&1.97\\%
+\cline{2%
+-%
+5}%
+&$C_z$ (mm)&11.7&$Z_y$ (cm$^3$)&1.97\\%
+\cline{2%
+-%
+5}%
+&$I_z$ (cm$^4$)&5.58&$Z_{pz}$ (cm$^3$)&3.55\\%
+\cline{2%
+-%
+5}%
+&$I_y$(cm$^4$)&5.58&$Z_{py}$ (cm$^3$)&3.57\\%
+\cline{2%
+-%
+5}%
+&$I_u$ (cm$^4$)&8.83&Radius of gyration, r ($cm$)&7.8\\%
+\cline{2%
+-%
+5}%
+\hline%
+\end{longtable}
+
+%
+\Needspace{10\baselineskip}%
+\subsection{Spacing Check}%
+\label{subsec:SpacingCheck}%
+\renewcommand{\arraystretch}{1.2}%
+\begin{longtable}{|p{2.5cm}|p{7.5cm}|p{3cm}|p{2.5cm}|}%
+\hline%
+\rowcolor{OsdagGreen}%
+Check&Required&Provided&Remarks\\%
+\hline%
+\endhead%
+\hline%
+Min. Diameter (mm)&&$\begin{aligned} d &=8 \end{aligned}$&\textcolor{OsdagGreen}{ 
+\textbf{}
+}\\%
+\hline%
+Hole Diameter (mm)& &$\begin{aligned} d_0 &=8 \end{aligned}$&\textcolor{OsdagGreen}{ 
+\textbf{}
+}\\%
+\hline%
+Minimum Bolts (nos)& &$\begin{aligned} r_l &=1 \end{aligned}$&\textcolor{OsdagGreen}{ 
+\textbf{}
+}\\%
+\hline%
+Min. Gauge Distance (mm)&$\begin{aligned} p/g_{\min}&= 2.5 d\\ &=2.5 \times8.0\\&=20.0\\ \\ & [\text{Ref. IS 800:2007, Cl.10.2.2}] \end{aligned}$&0.0&\textcolor{OsdagGreen}{ 
+\textbf{}
+}\\%
+\hline%
+Min. Edge Distance (mm)&$\begin{aligned}e_{\min} &= 1.5 d_0 \\ &= 1.5\times8\\ &=12.0\\ \\ & [\text{Ref. IS 800:2007, Cl.10.2.4.2}] \end{aligned}$&15&\textcolor{OsdagGreen}{ 
+\textbf{}
+}\\%
+\hline%
+Spacing Check&$\begin{aligned} \text{depth} & = 2~e + (r_l -1)~g\\ & = 2 \times 15+(1-1)\times20\\ & = 30\end{aligned}$&29.5&\textcolor{Red}{ 
+\textbf{Fail}
+}\\%
+\hline%
+\end{longtable}
+
+%
+\Needspace{10\baselineskip}%
+\subsection{Member Check}%
+\label{subsec:MemberCheck}%
+\renewcommand{\arraystretch}{1.2}%
+\begin{longtable}{|p{2.5cm}|p{4.5cm}|p{7cm}|p{1.5cm}|}%
+\hline%
+\rowcolor{OsdagGreen}%
+Check&Required&Provided&Remarks\\%
+\hline%
+\endhead%
+\hline%
+Tension Yielding Capacity (kN)&&$\begin{aligned} T_{\text{dg}} &= \frac{A_g f_y}{\gamma_{m0}}\\ \\ &=\frac{381.0\times250}{1.1\times 10^3}\\ &=86.59\\ \\ & [\text{Ref. IS 800:2007, Cl.6.2}] \end{aligned}$&\textcolor{OsdagGreen}{ 
+\textbf{}
+}\\%
+\hline%
+Slenderness&$\begin{aligned}\frac{K L}{r} &\leq 400\end{aligned}$&$\begin{aligned}\frac{K L}{r} &= \frac{1\times1250.0}{7.8}\\ &= 160.26\\ \\ & [\text{Ref. IS 800:2007, Cl.7.1.2}] \end{aligned}$&\textcolor{OsdagGreen}{ 
+\textbf{Pass}
+}\\%
+\hline%
+\end{longtable}
+
+%
+\section{Design Log}%
+\label{sec:DesignLog}%
+\Needspace{10\baselineskip}%
+\textcolor{blue}{ 
+\newline%
+2024{-}09{-}18 13:03:16 {-} Osdag {-} WARNING {-} : The available depth of the member cannot accommodate the minimum available bolt diameter of 8.0 mm considering the minimum spacing limit {[}Ref. Cl. 10.2, IS 800:2007{]}.
+}%
+\textcolor{OsdagGreen}{ 
+\newline%
+2024{-}09{-}18 13:03:16 {-} Osdag {-} INFO {-} : Reduce the bolt diameter or increase the member depth and re{-}design.
+}%
+\textcolor{red}{ 
+\newline%
+2024{-}09{-}18 13:03:16 {-} Osdag {-} ERROR {-} : Design is unsafe. 
+}%
+\textcolor{OsdagGreen}{ 
+\newline%
+2024{-}09{-}18 13:03:16 {-} Osdag {-} INFO {-} :=========End Of design===========
+}
+
+%
+\end{document}
